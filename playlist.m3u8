@@ -4,7 +4,7 @@
 #EXT-X-ALLOW-CACHE:YES
 #EXT-X-TARGETDURATION:11
 #EXTINF:10.677333,
-file0.ts
+https://github.com/sakoatsu/test/blob/master/file0.ts?raw=true
 #EXTINF:9.409367,
-file1.ts
+https://github.com/sakoatsu/test/blob/master/file1.ts?raw=true
 #EXT-X-ENDLIST
