@@ -14,3 +14,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           level: info
           pattern: "*.sh"
+      - name: hadolint
+        uses: reviewdog/action-hadolint@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          level: warning
+
