@@ -30,8 +30,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           golangci_lint_flags: "--no-config --tests=false --disable-all \
---enable=deadcode --enable=gocyclo --enable=golint --enable=varcheck --enable=structcheck \
---enable=maligned --enable=errcheck --enable=dupl --enable=ineffassign --enable=interfacer \
---enable=unconvert --enable=goconst --enable=gosec --enable=megacheck --enable=staticcheck \
---enable=govet --enable=typecheck --enable=unused --enable=gosimple"
-          level: warning
+				--enable=deadcode --enable=gocyclo --enable=golint --enable=varcheck --enable=structcheck \
+				--enable=maligned --enable=errcheck --enable=dupl --enable=ineffassign --enable=interfacer \
+				--enable=unconvert --enable=goconst --enable=gosec --enable=megacheck --enable=staticcheck \
+				--enable=govet --enable=typecheck --enable=unused --enable=gosimple"
+          level: info
