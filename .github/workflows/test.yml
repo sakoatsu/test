@@ -27,13 +27,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           level: warning
 
-  golangci-lint-all-in-one:
+  golangci-lint:
     name: runner / golangci-lint-all-in-one
     runs-on: ubuntu-latest
     steps:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v1
-      - name: golangci-lint (All-In-One config)
+      - name: golangci-lint 
         uses: docker://reviewdog/action-golangci-lint:v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -42,4 +42,4 @@ jobs:
 --enable=maligned --enable=errcheck --enable=dupl --enable=ineffassign --enable=interfacer \
 --enable=unconvert --enable=goconst --enable=gosec --enable=megacheck --enable=staticcheck \
 --enable=govet --enable=typecheck --enable=unused --enable=gosimple"
-          level: info, waring, error
+          level: waring
