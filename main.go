@@ -6,6 +6,5 @@ func main(){
     x := 0
     x += 1
     fmt.Println("ci test")
-    fmt.Println(y) 
 }
 
